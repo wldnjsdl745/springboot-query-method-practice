@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: org-manager
+
+  datasource:
+    url: "jdbc:mysql://localhost/company_db"
+    username: "root"
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
